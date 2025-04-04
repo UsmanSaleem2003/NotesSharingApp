@@ -1,0 +1,51 @@
+<!-- Layout for the Folder Activity which shows images inside the selected folder -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FolderActivity">
+
+    <!-- RecyclerView for displaying images -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvImages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llButtons"
+        android:padding="8dp"
+        android:scrollbars="vertical" />
+
+    <!-- LinearLayout for buttons -->
+    <LinearLayout
+        android:id="@+id/llButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Button to import files from storage -->
+        <Button
+            android:id="@+id/btnImportFiles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/import_files" />
+
+        <!-- Button to import images -->
+        <Button
+            android:id="@+id/btnImportImages"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/import_images" />
+
+        <!-- Button to capture and load new image -->
+        <Button
+            android:id="@+id/btnCaptureImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/capture_image" />
+    </LinearLayout>
+
+</RelativeLayout>

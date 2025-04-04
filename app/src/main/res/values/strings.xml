@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NotesSharingApp</string>
+    <string name="add_folder">Add Folder</string>
+    <string name="import_files">Import Files</string>
+    <string name="import_images">Import Images</string>
+    <string name="capture_image">Capture Image</string>
+    <string name="share_instructions">Select an option to share your notes.</string>
+</resources>
